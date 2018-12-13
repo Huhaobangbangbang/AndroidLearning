@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support:design:28.0.0] /root/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/48a16956cba9709a285e1ce8a4af2552/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8d30caf4260e78ea8e1498d3c1cdcaf0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /root/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/3148b8eaa62f746de047b5c56d1cb50c/AndroidManifest.xml:2:1-11:12
@@ -35,25 +35,25 @@ MERGED from [com.android.support:interpolator:28.0.0] /root/.gradle/caches/trans
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /root/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/42706cbb30b893bd0ccd572f18aa42a1/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/999ff678ab32d3b20805fa0eff8cb9dd/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a4fed73ad4fae8f8c3192bc5574625ef/AndroidManifest.xml:17:1-22:12
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
 	package
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:3:5-42
-		INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
-		INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:3:5-42
+		INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
+		INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
-		INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
+		INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
-		INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
+		INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:5:5-21:19
+ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:5:5-21:19
 MERGED from [com.android.support:design:28.0.0] /root/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/48a16956cba9709a285e1ce8a4af2552/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /root/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/48a16956cba9709a285e1ce8a4af2552/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /root/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/3148b8eaa62f746de047b5c56d1cb50c/AndroidManifest.xml:9:5-20
@@ -65,35 +65,35 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /root/.gradle/cache
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /root/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7efd4e93801fd82ec02180080beec9b7/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:9:9-43
 	android:icon
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.huhao.root.linkgame1211.MainActivity
-ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:12:9-20:20
+ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:12:9-20:20
 	android:name
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:12:19-47
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:12:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml:18:27-74
 uses-sdk
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:design:28.0.0] /root/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/48a16956cba9709a285e1ce8a4af2552/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] /root/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/48a16956cba9709a285e1ce8a4af2552/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8d30caf4260e78ea8e1498d3c1cdcaf0/AndroidManifest.xml:20:5-44
@@ -156,13 +156,13 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /root/.gradle/caches/tr
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/999ff678ab32d3b20805fa0eff8cb9dd/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a4fed73ad4fae8f8c3192bc5574625ef/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a4fed73ad4fae8f8c3192bc5574625ef/AndroidManifest.xml:20:5-44
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
-INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
+INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
-		INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
+		INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
+		INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
-		ADDED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
-		INJECTED from /root/Documents/Github/AndroidLearning/LInkgame12.11/app/src/main/AndroidManifest.xml
+		INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
+		ADDED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml
+		INJECTED from /root/Downloads/LInkgame12.11/app/src/main/AndroidManifest.xml

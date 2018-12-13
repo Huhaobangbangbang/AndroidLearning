@@ -1,4 +1,4 @@
-#Wed Dec 12 23:44:08 CST 2018
-base.0=/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/transforms/dexMerger/debug/8
+#Wed Dec 12 23:33:35 CST 2018
+base.0=/root/Downloads/LInkgame12.11/app/build/intermediates/transforms/dexMerger/debug/8
 path.0=classes.dex
 renamed.0=classes.dex

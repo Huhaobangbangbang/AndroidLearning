@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml",
+            "outputFile": "/root/Downloads/LInkgame12.11/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7efd4e93801fd82ec02180080beec9b7/res/values-af/values-af.xml",

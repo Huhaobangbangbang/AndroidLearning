@@ -1319,7 +1319,6 @@ menu menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw bleeding
-raw high
 raw holiday
 raw music
 string abc_action_bar_home_description
