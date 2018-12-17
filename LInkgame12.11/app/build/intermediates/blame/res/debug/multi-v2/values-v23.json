@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/root/Downloads/LInkgame12.11/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/04f9d05b6d6728a36a179a4b361ea89e/res/values-v23/values-v23.xml",

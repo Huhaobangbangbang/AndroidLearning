@@ -16,7 +16,7 @@
 
     <item
         android:id="@+id/rank"
-        android:title="Rank"
+        android:title="游戏选择"
         app:showAsAction="never">
         <menu>
             <group android:checkableBehavior="single">
@@ -32,6 +32,10 @@
                 <item
                     android:id="@+id/diffculty"
                     android:title="Diffculty"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/introduce"
+                    android:title="使用说明"
                     app:showAsAction="never" />
 
             </group>

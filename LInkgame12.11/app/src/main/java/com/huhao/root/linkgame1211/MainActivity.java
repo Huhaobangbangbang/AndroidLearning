@@ -7,10 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.huhao.root.linkgame1211.fragment.LinkGameFragment;
 
 public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private LinkGameFragment linkGameFragment = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         toolbar.setTitle("LinkGame");
         linkGameFragment = LinkGameFragment.newInstance();
+
         getSupportFragmentManager().beginTransaction().replace(R.id.container, linkGameFragment).commit();
     }
 
@@ -46,18 +51,21 @@ public class MainActivity extends AppCompatActivity {
                 linkGameFragment.loadData(LinkGameFragment.MEDIUM);
                 getSharedPreferences("linkgame", MODE_PRIVATE).edit().putInt("rank", LinkGameFragment.MEDIUM).apply();
                 break;
+            case R.id.introduce:
+                Toast.makeText(MainActivity.this,"开发者",Toast.LENGTH_SHORT).show();
+                break;
             case R.id.diffculty:
                 linkGameFragment.loadData(LinkGameFragment.DIFFICULTY);
                 getSharedPreferences("linkgame", MODE_PRIVATE).edit().putInt("rank", LinkGameFragment.DIFFICULTY).apply();
                 break;
+
             case R.id.newGame:
                 linkGameFragment.loadData(getSharedPreferences("linkgame", Context.MODE_PRIVATE).getInt("rank", 1));
                 break;
         }
+
         return super.onOptionsItemSelected(item);
     }
-
-    @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         int rank = getSharedPreferences("linkgame", Context.MODE_PRIVATE).getInt("rank", 1);
         switch (rank) {
@@ -70,9 +78,10 @@ public class MainActivity extends AppCompatActivity {
             case LinkGameFragment.DIFFICULTY:
                 menu.findItem(R.id.diffculty).setChecked(true);
                 break;
-
+            case R.id.introduce:
+                Toast.makeText(MainActivity.this,"开发者",Toast.LENGTH_SHORT).show();
+                break;
         }
-
         return super.onPrepareOptionsMenu(menu);
     }
 }

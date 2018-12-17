@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/root/Downloads/LInkgame12.11/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml",
+            "outputFile": "/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8d30caf4260e78ea8e1498d3c1cdcaf0/res/values-hu/values-hu.xml",
