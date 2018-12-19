@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.huhao.root.linkgame1211.MainActivity;
@@ -49,6 +50,8 @@ public class LinkGameFragment extends Fragment {
     private ImageView bg;
     private long startTime = 0, endTime = 0;
     private boolean isPlaying = false;
+    private RadioButton hot;
+    private RadioButton quiet;
 
 
     public LinkGameFragment() {
@@ -63,12 +66,10 @@ public class LinkGameFragment extends Fragment {
         return isPlaying;
     }
 
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_link_game, container, false);
@@ -89,10 +90,24 @@ public class LinkGameFragment extends Fragment {
                 loadData(getActivity().getSharedPreferences("linkgame", Context.MODE_PRIVATE).getInt("rank", 1));
                 bg.setVisibility(View.GONE);
                 start.setVisibility(View.GONE);
-
-                startTime = System.currentTimeMillis();
+                startTime = System.currentTimeMillis();//startTime为目前时间
                 isPlaying = true;
-
+            }
+        });
+        hot=view.findViewById(R.id.hot);
+        hot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(),"开启音乐模式high",Toast.LENGTH_SHORT).show();
+                startMusic();
+            }
+        });
+        quiet=view.findViewById(R.id.quiet);
+        quiet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(),"开启静音模式",Toast.LENGTH_LONG).show();
+            onStop();
             }
         });
         bg = view.findViewById(R.id.bg);
@@ -103,11 +118,10 @@ public class LinkGameFragment extends Fragment {
             @Override
             public void onItemClick(View v, int position) {
                 Item item = itemList.get(position);
-                if (item.isEliminated()) return;
-
+                if (item.isEliminated()) return;//判断选择
                 item.setSelect(!item.isSelect());
                 linkGameAdapter.notifyItemChanged(position);
-
+               //判断消除
                 if (lastClick != -1) {
                     eliminable(lastClick, position);
                 } else {
@@ -116,10 +130,7 @@ public class LinkGameFragment extends Fragment {
             }
         });
 
-//
     }
-
-    @Override
     public void onResume() {
         super.onResume();
         startMusic();
@@ -139,21 +150,7 @@ public class LinkGameFragment extends Fragment {
         mediaPlayer.start();
 
     }
-    private void startMusic2() {
-        try {
-            if (mediaPlayer != null && mediaPlayer.isPlaying()) {
-                mediaPlayer.pause();
-                mediaPlayer.release();
-            }
-        } catch (IllegalStateException e) {
-            e.printStackTrace();
-        }
 
-        mediaPlayer = MediaPlayer.create(getActivity(), R.raw.bleeding);
-        mediaPlayer.start();
-
-    }
-    @Override
     public void onStop() {
         super.onStop();
         if (mediaPlayer != null && mediaPlayer.isPlaying()) {
@@ -193,7 +190,6 @@ public class LinkGameFragment extends Fragment {
 //                loadData(getActivity().getSharedPreferences("linkgame", Context.MODE_PRIVATE).getInt("rank", 1));
                 bg.setVisibility(View.VISIBLE);
                 start.setVisibility(View.VISIBLE);
-                startMusic2();
                 isPlaying = false;
             }
         } else {
@@ -239,7 +235,7 @@ public class LinkGameFragment extends Fragment {
         }
     }
 
-    private boolean isGameOver() {
+    private boolean isGameOver() {//游戏结束
         boolean gameOver = true;
         for (int i = 0; i < ROW; i++) {
             for (int j = 0; j < COLUMN; j++) {

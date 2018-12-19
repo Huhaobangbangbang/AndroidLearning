@@ -905,6 +905,7 @@ dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
+dimen text_margin
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1007,6 +1008,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable girl
+drawable girl2
 drawable ic_autorenew_white_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1116,11 +1119,15 @@ id filled
 id fixed
 id forever
 id ghost_view
+id girl1
+id girl2
+id girl3
 id gone
 id group_divider
 id groups
 id home
 id homeAsUp
+id hot
 id icon
 id icon_group
 id ifRoom
@@ -1137,6 +1144,8 @@ id line1
 id line3
 id listMode
 id list_item
+id login_iv
+id loginname
 id masked
 id media_actions
 id medium
@@ -1164,6 +1173,7 @@ id percent
 id pin
 id progress_circular
 id progress_horizontal
+id quiet
 id radio
 id rank
 id recyclerview
@@ -1215,6 +1225,7 @@ id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
+id sure
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -1313,7 +1324,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_link_game
+layout fragment_login
 layout item
+layout list_fragment
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

@@ -2,46 +2,40 @@
 <instant-run
     abi="x86"
     api-level="27"
-    build-mode="COLD"
+    build-mode="HOT_WARM"
     density="560dpi"
     format="10"
     plugin-version="3.2.0"
-    timestamp="1545046402777"
+    timestamp="1545221023470"
     token="2625776557187633717"
-    verifier="FIELD_TYPE_CHANGE" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="476" />
+        duration="146" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="71" />
     <task
         name="instant-run-transform"
-        duration="46" />
+        duration="82" />
     <task
         name="verifier"
-        duration="20" />
+        duration="5" />
 
     <artifact
-        location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
+        location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         build-mode="FULL"
-        timestamp="1545030616603"
+        timestamp="1545181713697"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -53,34 +47,25 @@
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1545034431215"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
@@ -88,11 +73,8 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1545044633059"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
+        timestamp="1545211875825"
+        verifier="BINARY_MANIFEST_FILE_CHANGE" >
         <artifact
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
@@ -109,22 +91,49 @@
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
+            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1545217509592"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1545046402777"
-        verifier="FIELD_TYPE_CHANGE" >
+        timestamp="1545220185559"
+        verifier="FIELD_REMOVED" >
         <artifact
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1545220335252"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/builds/debug/1545220335252/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1545221023470"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

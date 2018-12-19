@@ -31,5 +31,25 @@
         android:text="开始"
         android:textColor="@android:color/white" />
 
+    <RadioButton
+        android:id="@+id/hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="0dp"
+        android:text="hot" />
+
+    <RadioButton
+        android:id="@+id/quiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginBottom="3dp"
+        android:text="quiet" />
+
 
 </RelativeLayout>
