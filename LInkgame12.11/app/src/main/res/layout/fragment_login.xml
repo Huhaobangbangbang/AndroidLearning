@@ -61,29 +61,34 @@
                 android:id="@+id/girl1"
                 android:layout_width="wrap_content"
                  android:layout_height="wrap_content" />
+
             <ImageView
+                android:id="@+id/girl11"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/girl"
-                />
+                android:src="@drawable/girl" />
 
             <RadioButton
                 android:id="@+id/girl2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+
             <ImageView
+                android:id="@+id/girl22"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/girl2"/>
+                android:src="@drawable/girl2" />
 
             <RadioButton
                 android:id="@+id/girl3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-<ImageView
-    android:layout_width="50dp"
-    android:layout_height="50dp"
-    android:src="@drawable/j"/>
+
+            <ImageView
+                android:id="@+id/girl33"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/j" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1px"

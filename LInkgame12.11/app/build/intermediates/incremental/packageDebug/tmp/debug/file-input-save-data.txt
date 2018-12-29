@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Dec 19 09:09:01 CST 2018
+#Fri Dec 21 15:09:45 CST 2018
 5.base=/root/Documents/Github/AndroidLearning/LInkgame12.11/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 22.path=image/18.png
 32.set=ASSET

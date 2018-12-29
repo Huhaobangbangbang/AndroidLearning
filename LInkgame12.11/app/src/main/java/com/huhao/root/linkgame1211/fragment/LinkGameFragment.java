@@ -1,11 +1,16 @@
 package com.huhao.root.linkgame1211.fragment;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.ListFragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -26,10 +31,17 @@ import com.huhao.root.linkgame1211.listen.OnItemClickListener;
 import com.huhao.root.linkgame1211.R;
 import com.huhao.root.linkgame1211.algorithm.Util;
 
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
+
+import java.text.SimpleDateFormat;
+
+import java.util.Date;
+import java.util.List;
 
 public class LinkGameFragment extends Fragment {
     public static final int EASY = 1;
@@ -40,6 +52,7 @@ public class LinkGameFragment extends Fragment {
     public static final int COLUMN = 8;
 
 
+   private  MainActivity mainActivity;
     private int[][] map = new int[ROW][COLUMN];
     private RecyclerView recyclerview;
     private LinkGameAdapter linkGameAdapter;
@@ -52,7 +65,16 @@ public class LinkGameFragment extends Fragment {
     private boolean isPlaying = false;
     private RadioButton hot;
     private RadioButton quiet;
+    SharedPreferences sp;
+    private  long time=endTime-startTime;
+    private Button login2;
 
+    private SQLiteDatabase db;
+    //数据库名称
+    private static final String DATABASE_NAME="huhao.db";
+    //数据库版本号
+    private static final int DATABASE_VERSION=1;
+    private static final String TABLE_NAME="rank";
 
     public LinkGameFragment() {
     }
@@ -68,6 +90,8 @@ public class LinkGameFragment extends Fragment {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mainActivity = (MainActivity) getActivity();
+
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -82,6 +106,7 @@ public class LinkGameFragment extends Fragment {
 
     private void init(@NonNull View view) {
         recyclerview = view.findViewById(R.id.recyclerview);
+
         start = view.findViewById(R.id.start);
         start.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,20 +121,34 @@ public class LinkGameFragment extends Fragment {
         });
         hot=view.findViewById(R.id.hot);
         hot.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"开启音乐模式high",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),"音乐重新开始",Toast.LENGTH_SHORT).show();
                 startMusic();
+
             }
         });
         quiet=view.findViewById(R.id.quiet);
         quiet.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"开启静音模式",Toast.LENGTH_LONG).show();
             onStop();
             }
         });
+        login2=view.findViewById(R.id.login2);
+        login2.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Toast.makeText(getActivity(),"请输入你的信息",Toast.LENGTH_LONG).show();
+                //点击按钮，出现下一个fragment
+                FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
+                fragmentTransaction.add(R.id.container,new Login());
+
+                fragmentTransaction.commit();
+            }
+        });
+
         bg = view.findViewById(R.id.bg);
         linkGameAdapter = new LinkGameAdapter(getActivity(), itemList);
         recyclerview.setLayoutManager(new GridLayoutManager(getContext(), COLUMN));
@@ -150,7 +189,10 @@ public class LinkGameFragment extends Fragment {
         mediaPlayer.start();
 
     }
-
+    private String getTime() {
+        String pattern = "yyyy-MM-dd HH:mm";
+        return new SimpleDateFormat(pattern).format(new Date());
+    }
     public void onStop() {
         super.onStop();
         if (mediaPlayer != null && mediaPlayer.isPlaying()) {
@@ -185,9 +227,12 @@ public class LinkGameFragment extends Fragment {
             if (isGameOver()) {
                 endTime = System.currentTimeMillis();
                 long duration = endTime - startTime;
-
-                Toast.makeText(getActivity(), "一局连连看结束～！名字：Donald Trump 用时：" + (duration / (1000 * 60.0) + "分钟"), Toast.LENGTH_SHORT).show();
-//                loadData(getActivity().getSharedPreferences("linkgame", Context.MODE_PRIVATE).getInt("rank", 1));
+               //广播输出信息
+                Intent intent=new Intent();
+                intent.setAction("sendMsg");
+                getActivity().sendBroadcast(intent);
+                Toast.makeText(getActivity(), "一局连连看结束～！ 用时：" + (duration / (1000 * 60.0) + "分钟"), Toast.LENGTH_SHORT).show();
+       loadData(getActivity().getSharedPreferences("linkgame", Context.MODE_PRIVATE).getInt("rank", 1));
                 bg.setVisibility(View.VISIBLE);
                 start.setVisibility(View.VISIBLE);
                 isPlaying = false;
@@ -242,6 +287,9 @@ public class LinkGameFragment extends Fragment {
                 if (map[i][j] == 1) return false;
             }
         }
+        getTime();
+
+
         return gameOver;
     }
 

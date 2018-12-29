@@ -37,9 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/bg"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="98dp"
-        android:layout_marginBottom="0dp"
-        android:text="hot" />
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="8dp"
+        android:text="重新开始" />
 
     <RadioButton
         android:id="@+id/quiet"
@@ -47,9 +47,18 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/bg"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="154dp"
-        android:layout_marginBottom="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="7dp"
         android:text="quiet" />
+
+    <Button
+        android:id="@+id/login2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quiet"
+        android:layout_marginStart="-10dp"
+        android:layout_toEndOf="@+id/recyclerview"
+        android:text="注册信息" />
 
 
 </RelativeLayout>
